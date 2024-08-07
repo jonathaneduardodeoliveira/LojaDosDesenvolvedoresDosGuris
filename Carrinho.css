@@ -14,6 +14,9 @@ footer {
 }
 
 header {
+/* Inseri uma linha alinhando todos os elementos do header ao centro (antes eles estavam alinhados à esquerda) - Juliana*/    
+    text-align: center;
+/* Fim da inserção*/    
     padding: 2rem 0;
     background-color: #f8f9fa;
 }

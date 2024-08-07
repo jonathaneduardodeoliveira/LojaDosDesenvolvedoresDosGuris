@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+/* Inseri uma linha para mudar a direção do flex - Juliana*/
+    flex-direction: column;
+/* Fim da inserção */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,6 +20,13 @@ body {
     max-width: 500px;
     width: 100%;
 }
+
+/* Adicionei um pouco de margem e padding no lado direito para que ficasse mais simétrico. */
+#address-form {
+    padding-right: 10px;    
+    margin-right: 10px;
+}
+/* Fim da inserção */
 
 label {
     display: block;

@@ -44,14 +44,17 @@ function loadProducts() {
                 const price = document.createElement('p');
                 price.textContent = `R$ ${product.price.toFixed(2)}`;
 
-                if (window.location.pathname.endsWith('index.html')) {
+                productElement.append(img, title, price);
+
+// Recortei o código que adiciona o botão de comprar e o colei abaixo da linha em que imagem, título e preço são adicionados ao produto. Fazendo dessa maneira, o botão comprar vai ficar abaixo das outras informações. - Juliana
+                 if (window.location.pathname.endsWith('index.html')) {
                     const button = document.createElement('button');
                     button.textContent = 'Comprar';
                     button.addEventListener('click', () => addToCart(product.id, product.title, product.price, product.thumbnail));
                     productElement.appendChild(button);
                 }
+// Fim da inserção.
 
-                productElement.append(img, title, price);
                 productList.appendChild(productElement);
             });
 
